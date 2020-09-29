@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML LAYOUT</title>
+  <style>
+    body{
+      background-color: #777;
+      font-family: Arial, Helvetica, sans-serif;
+      margin:0;
+      padding:0;
+    }
+    #wrapper{
+      
+      width:1000px;
+      background-color: white;
+      margin:0 auto;
+    }
+    #header{
+      background-color: crimson;
+      height: 100px;
+      text-align:left;
+    }
+    #header h1{
+      box-sizing: border-box;
+      padding-top:30px;
+      padding-left:20px;
+      margin:0;
+      font-style:oblique;
+    }
+    #menu{
+      background-color: lightcoral;
+    }
+    #menu ul{
+      margin:0;
+
+    }
+    #menu li{
+      display:inline-block;
+    }
+    #menu li a{
+      display:block;
+      padding:10px 12px;
+      text-decoration:none;
+      color:black;
+     border-right: 2px solid lightgreen;
+    }
+    #menu li a:hover{
+      background-color: crimson;
+      color:#fafafa;
+    }
+    #content{
+      width:800px;
+      float:left;
+      min-height: 700px;
+      padding:20px;
+      box-sizing: border-box;
+    }
+    #content h1{
+      font-size:60px;
+      color:red;
+      text-shadow: 6px 9px 10px black;
+      }
+    #sidebar{
+      float:right;
+      width:200px;
+      background-color: lightsteelblue;
+      min-height:700px;
+    }
+    #sidebar li{
+           display:block;
+           padding:5px;
+    }
+    #sidebar a{
+      text-decoration:none;
+      color:black;
+      display:block;
+      padding:10px;
+
+    }
+    #sidebar a:hover{
+      
+      color:#fafafa;
+      text-shadow: 1px 1px 5px red;
+    }
+    #footer{
+      clear:both;
+      background-color: black;
+      color:#fafafa;
+      padding:10px 0;
+      text-align: center;
+      text-transform:lowercase;
+    }
+  
+    @media screen and (max-width:1024px)
+    {
+      #wrapper{
+        width:900px;
+      }
+      #sidebar{
+        width: 200px;
+
+      }
+      #content{
+        width:700px;
+      }
+     
+    }
+    @media screen and (max-width:950px)
+    {
+      #wrapper{
+        width:700px;
+      }
+      #sidebar{
+        width: 200px;
+
+      }
+      #content{
+        width:500px;
+      }
+      @media screen and (max-width:750px)
+      {
+        #wrapper{
+          width:500px;
+        }
+        #sidebar{
+          width:150px;
+          
+        }
+        #content{
+          width:350px;
+        }
+        #menu{
+          display: none;
+
+        }
+        
+      }
+      @media screen and (max-width:550px) {
+        #wrapper{
+          width:400px;
+        }
+        #sidebar{
+          width:400px;
+          float:left;
+          min-height: 280px;
+          
+        }
+        #content{
+          width:400px;
+        }
+        #menu{
+          display: none;
+
+        }
+        #header{
+          height: 50px;
+        }
+        #header h1{
+          margin:0;
+          padding:0;
+          padding-top:6px;
+          margin-left:20px;
+        }
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="wrapper">
+    <div id="header"><h1>Ahmed Abir</h1></div>
+    <div id="menu">
+      <ul>
+        <li><a href="">HOME</a></li>
+        <li><a href="">ABOUT US</a></li>
+        <li><a href="">GALLERY</a></li>
+        <li><a href="">CONTACT US</a></li>
+        <li><a href="">LOG IN</a></li>
+      </ul>
+    </div>
+  
+    <div id="sidebar">
+      <ul>
+        <li><a href="">HOME</a></li>
+        <li><a href="">ABOUT US</a></li>
+        <li><a href="">GALLERY</a></li>
+        <li><a href="">CONTACT US</a></li>
+        <li><a href="">LOG IN</a></li>
+      </ul>
+    </div>
+    <div id="content">
+      <h1>Basic Python</h1>
+      <p>Lorem vero amet sed no dolor. Amet lorem amet dolor invidunt est. Accusam amet sanctus et magna gubergren, ipsum accusam nonumy nonumy dolores. Dolor invidunt sed et ut clita. Takimata et nonumy erat accusam at dolor elitr gubergren sea. Lorem ipsum et kasd elitr ea. Duo sea lorem accusam justo.</p>
+      <p>Los el que del la las baile, por bajo a celeste pensamiento pies los, la la lentejas en por sus. Tierra de mi todo lenguas dando mío, la tierra hule ojos tierra las, amor las amor deja amor que muelles la nino, nino los dando los grupos aire mi abierta.</p>
+    </div>
+   
+    <div id="footer">
+      <span>Ahemed-Abir@copyright-2020</span>
+    </div>
+  </div>
+</body>
+</html>
